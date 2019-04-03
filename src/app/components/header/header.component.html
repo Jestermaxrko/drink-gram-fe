@@ -1,5 +1,16 @@
 <div class="container">
-  <h1 class="center">
-    {{ title }}
-  </h1>
+  <div class="center">
+    <h1 class="title">
+      {{ title }}
+    </h1>
+    <div>
+      <div *ngIf="userName" class="logger">
+        <span>{{ userName }}</span>
+        <span (click)="logOut()" class="auth-btn">Logout</span>
+      </div>
+      <div *ngIf="!userName" class="logger">
+        <span (click)="openAuthorizeForm()" class="auth-btn">Sing In</span>
+      </div>
+    </div>
+  </div>
 </div>

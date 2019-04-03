@@ -9,3 +9,26 @@ h1 {
   padding: 12px;
   color: #2f3b42;
 }
+
+.center {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.logger span {
+  margin: 10px;
+}
+
+.auth-btn {
+  cursor: pointer;
+}
+
+.auth-btn:hover {
+  text-decoration: underline;
+}
